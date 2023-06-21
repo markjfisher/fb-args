@@ -11,4 +11,4 @@ Copy the main.xex file into your target environment, e.g. Altirra.
 Run as follows in your SDX environment (note, I've renamed it to test.xex in
 image):
 
-[example output](args-example.png)
+![example output](args-example.png)
