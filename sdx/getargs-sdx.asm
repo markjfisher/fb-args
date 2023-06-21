@@ -19,16 +19,17 @@ ptr1: .res 1
 
   .code
 
+; this is the C-String buffer of 0 terminated strings copied from SDX buffer
+; into our own
 CL_BUFFER: .res CL_SIZE + 1
+; Number of args parsed
 _ARGC:      .res 1
+; A list of pointers to the strings in the CL_BUFFER
 _ARGV:      .res (1 + MAXARGS) * 2
 
-; getargs.asm
-;
 ; Converted from getargs.s in cc65
 ;
 .proc GET_ARGS
-    ; get dos version
     ldx #0
 
 ; Initialize CL_BUFFER buffer
@@ -37,7 +38,7 @@ argdos:
     ldy     #ATEOL
     sty     CL_BUFFER+CL_SIZE
 
-; Move SpartaDOS
+; Move SpartaDOS buffer to our buffer
 
 sparta:
     lda     DOSVEC
