@@ -15,7 +15,7 @@ ATEOL   = $9B
 LBUF    = 63
 
   .zeropage
-ptr1: .res 1
+ptr1: .res 2
 
   .code
 

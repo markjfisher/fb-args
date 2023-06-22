@@ -20,10 +20,6 @@ if _r <> 0
   end
 endif
 
-' HELP! why do I need this? Any variable name will do, but
-' without this line, the loop below fails
-foo$ = ""
-
 ' Loop through all args and display them
 
 ' argv includes the command name, so argc is 1 higher than the number of args

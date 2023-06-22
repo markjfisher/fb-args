@@ -25,7 +25,7 @@ MAX_DOS_WITH_CMDLINE = XDOS
   .import _ARGV
 
   .zeropage
-ptr1: .res 1
+ptr1: .res 2
 
   .code
 
